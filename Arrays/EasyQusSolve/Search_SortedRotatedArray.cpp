@@ -1,46 +1,35 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+int search(vector<int> &nums, int target)
+{
+    int beg = 0, end = nums.size() - 1;
+    while (beg <= end)
+    {
+        int mid = beg + (end - beg) / 2;
+
+        if (nums[mid] == target)
+        {
+            return mid;
+        }
+        else if (nums[beg] <= nums[mid])
+        {
+            (target >= nums[beg] && target < nums[mid]) ? end = mid - 1 : beg = mid + 1;
+        }
+        else
+        {
+            (target > nums[mid] && target <= nums[end]) ? beg = mid + 1 : end = mid - 1;
+        }
+    }
+    return -1;
+}
+
 int main()
 {
-    int n;
-    cout << "Enter the number of elements in an array: ";
-    cin >> n;
+    vector<int> nums = {4, 5, 6, 7, 0, 1, 2};
+    int target = 0;
 
-    int arr[n];
-    cout << "Enter the " << n << " elements:\n";
-    for (int i = 0; i < n; i++)
-    {
-        cout << "Enter [" << i << "] element: ";
-        cin >> arr[i];
-    }
+    cout << "Index: " << search(nums, target) << endl;
 
-    cout << "Enter the searching item: ";
-    int sch;
-    cin >> sch;
-
-    int start = 0, end = n - 1, flag = 0;
-
-    while (start < end)
-    {
-        int mid = (start + end) / 2;
-
-        if (arr[mid] == sch)
-        {
-            cout << "Found at index " << mid << endl;
-            flag = 1;
-            break;
-        }
-        else if (arr[start] < arr[mid]) // Left part sorted
-        {
-            (sch >= arr[start] && sch < arr[mid]) ? end = mid - 1 : start = mid + 1;
-        }
-        else // Right part sorted
-        {
-            (sch <= arr[end] && sch > arr[mid]) ? start = mid + 1 : end = mid - 1;
-        }
-    }
-
-    if (flag == 0)
-        cout << "Not found";
+    return 0;
 }
