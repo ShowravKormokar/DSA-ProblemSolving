@@ -1,4 +1,4 @@
-// Leetcode problem -> 074. Apple Redistribution into Boxes 
+// Leetcode problem -> 3074. Apple Redistribution into Boxes
 #include <bits/stdc++.h>
 using namespace std;
 
