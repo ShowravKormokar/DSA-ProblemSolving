@@ -25,7 +25,8 @@ I actively solve problems every day and update the repository regularly.
 
 I am consistently solving the **Daily LeetCode Problem** and have earned the following badges:
 
-<img width="449" height="326" alt="image" src="https://github.com/user-attachments/assets/6a07ecd5-60c5-46c7-9d6e-f0edb0533951" />
+<img width="453" height="328" alt="image" src="https://github.com/user-attachments/assets/daa69b42-8014-4d7b-9dfa-642a34114d73" />
+
 
 
 Follow my progress here:
