@@ -21,6 +21,10 @@ I actively solve problems every day and update the repository regularly.
 
 ---
 
+## 🏆 My 2025🙂
+<img width="1200" height="2116" alt="LeetCode_Rewind_2025" src="https://github.com/user-attachments/assets/ec3d626d-7af6-4c83-95ca-a73ceec365f7" />
+
+
 ## 🏆 LeetCode Achievements
 
 I am consistently solving the **Daily LeetCode Problem** and have earned the following badges:
