@@ -46,7 +46,7 @@ int main()
     vector<int> nums1 = {2, 1, -2, 5};
     vector<int> nums2 = {3, 0, -6};
 
-    cout << sol.maxDotProduct(nums1, nums2) << endl;
+    cout << sol.maxDotProduct(nums1, nums2) << endl; //Output: 18
     return 0;
 }
 
