@@ -21,7 +21,7 @@ int main()
     Solution sol;
     vector<char> letters = {'c', 'f', 'j'};
     char target = 'a';
-    cout << sol.nextGreatestLetter(letters, target) << endl; // Output: 'c'
+    cout << sol.nextGreatestLetter(letters, target) << endl; // Output: 'c'💙
     return 0;
 }
 
