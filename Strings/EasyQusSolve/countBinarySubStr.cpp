@@ -28,7 +28,6 @@ public:
 
         int result = 0;
 
-        // FIX: start from 1
         for (int i = 1; i < grpSize.size(); i++)
         {
             result += min(grpSize[i - 1], grpSize[i]);
