@@ -8,7 +8,7 @@ public:
     int minScore(int n, vector<vector<int>> &roads)
     {
         int ans = INT_MAX;
-        vector<vector<pair<int, int>>> graph(n); // graph[u] := [(v, distance)]
+        vector<vector<pair<int, int>>> graph(n);
         queue<int> q{{0}};
         vector<bool> seen(n);
         seen[0] = true;
